@@ -1,3 +1,4 @@
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -6,10 +7,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
-
-
-
+public class loopi {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
