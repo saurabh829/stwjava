@@ -10,6 +10,15 @@ class line{
     void printline(){
         System.out.println("y = " + m +"x + "+ c);
     } 
+
+    point intersection(line l){
+        double x1 = (l.c - c)/(m-l.m);
+        double y1 = m*x1 + c;
+        point p1 = new point(x1,y1);
+        return p1;
+    }
+
+
 }
 
 
@@ -19,7 +28,7 @@ class point{
 
     double x ;
     double y;
-    point(int x1,int y1){
+    point(double x1,double y1){
         x = x1;
         y = y1;
     }
@@ -36,14 +45,24 @@ class point{
         return l1;
     }
 
+    void printpoint(){
+        System.out.println("("+x+" , "+y+")");
+    }
+
 }
 
 public class program{
     public static void main(String[] args) {
-        point p1 = new point(1,1);
-        point p2 = new point(2,2);
-        System.out.println(p1.dist(p2));
-        line l1 = p1.construct_line(p2);
-        l1.printline();
+        // point p1 = new point(1,1);
+        // point p2 = new point(2,2);
+        // System.out.println(p1.dist(p2));
+        // line l1 = p1.construct_line(p2);
+        // l1.printline();
+
+        line l1 = new line(9,3);
+        line l2 = new line(7,4);
+        point p1 = l1.intersection(l2);
+        p1.printpoint();
+
     }
 }
