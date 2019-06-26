@@ -1,4 +1,4 @@
-package package1.class1;
+package package1;
 
 class A{
     int x;
@@ -35,7 +35,7 @@ class B extends A{
 }
 
 
-public class inheritence{
+public class class1{
     public static void main(String[] args) {
         B b = new B();
         b.foo();

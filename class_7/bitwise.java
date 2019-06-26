@@ -9,5 +9,7 @@ public class bitwise {
         // int a1 = 1;
         System.out.println(5>>1);
 
+        if ( (a==b) | (b==c) )
+
     }
 }

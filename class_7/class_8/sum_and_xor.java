@@ -1,4 +1,6 @@
 import java.util.*;
+import package1.class1;
+
 public class sum_and_xor{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
